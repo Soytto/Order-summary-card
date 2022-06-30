@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    /* display: grid; */
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat:repeat-x;
+}
+
+section {
+    background-color: white;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr ;
+    justify-content: center;
+    width: 400px;
+    border-radius: 1rem;
+    gap: 1.8rem ;
+    box-shadow: 0 15px 15px hsla(245, 75%, 52%, 0.121) ;
+}
+
+
+img {
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+}
+
+.text {
+    padding: 0 3rem;
+}
+
+h1 {
+    padding: 0.8rem ;
+    font-size: 1.7rem;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.annual_plan {
+    line-height: 1.6;
+}
+
+h4 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 15px;
+}
+
+p {
+    font-size: 16px;
+    color:  hsl(224, 23%, 55%);
+}
+
+.buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin: -1rem 2.5rem;
+}
+
+.plan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.change {
+    border: none;
+    background-color: transparent;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 2.5rem 2.5rem 2.5rem;
+    gap: 1rem;
+}
+
+.but1 {
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+    background-color:  hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 900;
+    border: none;
+    box-shadow: 0 15px 7px hsla(245, 75%, 52%, 0.121) ;
+}
+
+.but2 {
+    padding: 0.8rem;
+    background-color: transparent;
+    border: none;
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+}
+
+@media screen and (max-width : 700px)   {
+
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat:repeat-x;
+    }
+
+    section {
+        width: 360px;
+        gap: 2rem;
+    }
+
+    .text {
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .buy {
+        padding: 1rem;
+        margin: -1rem 2rem -1rem 2rem;
+    }
+
+    .but1 {
+        margin: 0 -0.5rem;
+        padding: 1rem;
+    }
+
+    .but2 {
+        margin: 0 -0.5rem;
+        margin-bottom: -1rem;
+        padding: 1rem;
+    }
+}
